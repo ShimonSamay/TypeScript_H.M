@@ -2,23 +2,23 @@ import { log } from "console";
 import React from "react";
 
 const Game = () => {
-    // let getUntil10 = ():void => {
-    //    let condition:boolean = true ;
-    //    let userGuesses:number[] = [] ;
-    //    let counter:number = 0 ;
-    //    while (counter < 1){
-    // let userNumber = Number(prompt("type a number"));
-    // if (userNumber != 0) {
-    //  userGuesses.push(userNumber);
-    // }
-    // else {
-    //  counter++ ;
-    //  let minNum:number = Math.min(...userGuesses);
-    //  let maxNum:number = Math.max(...userGuesses);
-    //  console.log(`Max = ${maxNum} - Min = ${minNum}`); 
-    // }
-    // }
-    // }
+    let getUntil10 = ():void => {
+       let condition:boolean = true ;
+       let userGuesses:number[] = [] ;
+       let counter:number = 0 ;
+       while (counter < 1){
+    let userNumber = Number(prompt("type a number"));
+    if (userNumber != 0) {
+     userGuesses.push(userNumber);
+    }
+    else {
+     counter++ ;
+     let minNum:number = Math.min(...userGuesses);
+     let maxNum:number = Math.max(...userGuesses);
+     console.log(`Max = ${maxNum} - Min = ${minNum}`); 
+    }
+    }
+    }
 
 //     let usersNums:number[] = [];
 //    let getcouple = ():number[] => {
@@ -82,7 +82,7 @@ let fizzBuzGame = ():void => {
         <p>your numbers : {usersNums.join("-")}</p> */}
         {/* {oneHunderd(2)} */}
         {/* {console.log(firstNameLetter())} */}
-        {fizzBuzGame()}
+        {/* {fizzBuzGame()} */}
         </>
     )
 }

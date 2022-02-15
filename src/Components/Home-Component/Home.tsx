@@ -82,14 +82,15 @@ const Home = () => {
       randomNumbets[i] = Math.round(Math.random() * 10);
     }
     console.log(randomNumbets);
-    randomNumbets.indexOf(someNumber) > -1
-      ? console.log("exist")
-      : console.log("not exist ");
+    randomNumbets.indexOf(someNumber) > -1 ? console.log("exist") : console.log("not exist ");
   };
 
-  let printStudents = (...someStudents: Istudent[]) => {
+  let printStudents = (...someStudents: Istudent[]):void => {
     for (let student of someStudents) {
-      console.log(`${student.FirstName} ${student.LastName} ${student.Age}`);
+        for(let key in student){
+          // console.log(`${key} : ${student[key]}`)
+          
+        }
     }
   };
 
